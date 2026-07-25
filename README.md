@@ -407,3 +407,5 @@ detection more robust (at the cost of speed).
 # Confirms detection fires and stays quiet on a safe control server
 bash selftest.sh
 ```
+python3 vulnhunter.py -l urls.txt -m active -c xss,sqli -t 30 -x http://127.0.0.1:8080 -o run1
+cat gau.txt | python3 vulnhunter.py -m passive -o triage
